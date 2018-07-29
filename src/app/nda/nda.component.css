@@ -74,6 +74,50 @@ a{
     color: black;
     padding: 2px;
 }
+
+
+.loader {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    z-index: 20;
+    position: fixed;
+    animation-name: fadeout;
+    animation-iteration-count: 1;
+    animation: fadeout 2s linear 5s 1;
+    animation-fill-mode: forwards;
+}
+
+.spinner {
+    margin: 0 auto;
+    padding: 21%;
+    padding-bottom: 0;
+    display: block;
+    z-index: 20;
+    position: relative;
+    background-color: white;
+}
+
+h2 {
+    margin: 0 auto;
+    display: block;
+    top: 37%;
+    z-index: 21;
+    position: fixed;
+    color: black;
+    left: 47%;
+    background-image: url("../../assets/loading.gif");
+    height: 300px;
+    width: 400px;
+    text-align: center;
+    left: 25%;
+    right: 25%;
+    background-repeat: no-repeat;
+    padding-top: 174px;
+    font-family: helvetica;
+    font-weight: 100;
+}
+
 @keyframes shadow-animation{
     0%{transform: translate(0,0);}
     50%{transform: translate(25%,-25%);
@@ -88,28 +132,7 @@ a{
     }
 }
 
-.loader {
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    z-index: 20;
-    position: fixed;
-}
-
-.spinner {
-    margin: 0 auto;
-    padding: 21%;
-    display: block;
-    z-index: 20;
-    position: relative;
-    background-color: white;
-}
-
-.h2 {
-    margin: 0 auto;
-    padding: 25%;
-    display: block;
-    z-index: 20;
-    position: relative;
-    color: black;
+@keyframes fadeout{
+    0% {opacity: 1; visibility: visible}
+    100% {opacity: 0; visibility: hidden}
 }

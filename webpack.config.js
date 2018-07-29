@@ -127,8 +127,8 @@ module.exports = {
                 require('imagemin-pngquant')({
                   floyd: 1,
                   speed: 2,
-                  strip: true,
-                  quality: '60-65'
+                  strip: false,
+                  quality: '90-91'
                 }),
               ]
             }
