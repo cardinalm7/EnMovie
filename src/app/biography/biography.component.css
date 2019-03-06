@@ -1,7 +1,7 @@
 .bg{
     height: 100%;
     width: 100%;
-    background-image: url("../../assets/background/biography.png");
+    background-image: url("../../assets/background/biography2.png");
     background-size: cover;
     background-position: center;
     background-position-y: top;
@@ -9,7 +9,8 @@
 div.bio{
     position: fixed;
     top: 50%;
-    height: 100%;
+    height: auto;
+    width: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -19,15 +20,11 @@ div.bio{
 }
 img.title{
     display: block;
-    margin: 0 auto 35px auto;
-    width: 360px;
-    z-index: 2;
+    margin: 60px auto 35px auto;
+    width: inherit;
+    z-index: 20;
 }
-img.bio{
-    width: 600px;
-    margin: 25px 0;
-    z-index: 2;
-}
+
 .moving-bg img{
     position: fixed;
     z-index: 1;
